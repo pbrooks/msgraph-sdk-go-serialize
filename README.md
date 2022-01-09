@@ -87,7 +87,7 @@ When using the [Microsot Graph SDK for go](https://github.com/microsoftgraph/msg
 ## Explination
 
 Serialization within SchemaExtension will call the parent serializer.
-Entity.Serialize will output a kvp and prepend a comma delimiter.
+Entity.Serialize will output a kvp and append a comma delimiter.
 
 The WriteAdditionalData function will be called, adding no output.
 However, this function will trim any last property function from the writer.

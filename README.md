@@ -100,7 +100,9 @@ Invalid JSON is produced and rejected by the graph API.
 The pattern of calling the parent serializer, is a clear design choice through the code.
 
 Mitigation 1 - Re-work call order, to have additional data always execute at the end.
+
 Mitigation 2 - Ensure graph construction of models (i.e NewSchemaExtension) always nil AdditionalData)
+
 Mitigation 3 - User error, the user is implementing the API incorrectly.
 
 A sample case TestSerialization_Mitigation is provided, where AdditionalData is explicitly set to nil.
